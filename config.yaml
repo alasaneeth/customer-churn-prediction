@@ -1,0 +1,15 @@
+data:
+  raw_path: "data/raw/telco_customer_churn.csv"
+  processed_path: "data/processed/processed_data.csv"
+  
+model:
+  test_size: 0.2
+  random_state: 42
+  cv_folds: 5
+  
+hyperparameters:
+  xgboost:
+    learning_rate: [0.01, 0.1, 0.2]
+    max_depth: [3, 5, 7]
+    n_estimators: [100, 200, 300]
+    subsample: [0.8, 0.9, 1.0]
